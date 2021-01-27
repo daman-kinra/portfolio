@@ -1,0 +1,53 @@
+.content.project {
+  margin-top: 13vh;
+  height: 70%;
+  flex-grow: 1;
+  overflow: auto;
+  h2 {
+    color: #556052;
+    font-size: 17px;
+    font-family: "Noto Serif JP", serif;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+.project_card:nth-child(1) {
+  margin-top: 20vh;
+}
+.project_card {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+  border-radius: 1.3rem;
+}
+.project_codes {
+  flex: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  .liveAt {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+.github {
+  margin-right: 10px;
+}
+.title {
+  text-align: center;
+  h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+}
