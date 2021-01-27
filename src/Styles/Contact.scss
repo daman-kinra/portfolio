@@ -1,0 +1,31 @@
+.right.inContact {
+  display: flex;
+  align-items: flex-end;
+}
+.input_fiels {
+  margin-bottom: 20px !important;
+  width: 70% !important;
+}
+.input_fiels:focus {
+  outline: none !important;
+  border: none !important;
+  //   border: 1px solid #70b4cc !important;
+}
+.input_fiels:hover {
+  border: none !important;
+}
+.content.contact {
+  margin-bottom: 10px;
+  height: 80%;
+}
+.submit_btn {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+}
+p {
+  font-size: 17px;
+  font-family: "Noto Serif JP", serif;
+  color: #556052;
+}
+p:nth-child(2) {
+  margin-bottom: 20px;
+}
