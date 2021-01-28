@@ -1,5 +1,5 @@
 // eslint-disable-next-line
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Download from "../Components/Download";
 import { Data } from "../Components/ProjectDescription";
 import Project from "../Components/Project";
@@ -9,12 +9,8 @@ import "../Styles/Home.scss";
 import LeftNavbar from "../Components/LeftNavbar";
 
 function Projects() {
-  console.log(Data);
-  // eslint-disable-next-line
-  const [theme, setTheme] = useState("blue");
-
   return (
-    <main className={theme}>
+    <main>
       <section className="glass">
         <LeftNavbar />
         <div className="right">

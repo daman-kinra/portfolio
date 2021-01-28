@@ -1,5 +1,5 @@
 // eslint-disable-next-line
-import React, { useState, useEffect } from "react";
+import React from "react";
 import LeftNavbar from "../Components/LeftNavbar";
 import Download from "../Components/Download";
 import { FaNode, FaJava } from "react-icons/fa";
@@ -10,10 +10,8 @@ import { DiMongodb, DiSass } from "react-icons/di";
 import "../Styles/Skills.scss";
 
 function Skills() {
-  // eslint-disable-next-line
-  const [theme, setTheme] = useState("blue");
   return (
-    <main className={theme}>
+    <main>
       <section className="glass">
         <LeftNavbar />
         <div className="right">

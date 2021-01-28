@@ -1,5 +1,5 @@
 // eslint-disable-next-line
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "../Styles/Contact.scss";
 import LeftNavbar from "../Components/LeftNavbar";
 import emailjs from "emailjs-com";
@@ -42,8 +42,6 @@ const styles = (theme) => ({
 
 function Contact(props) {
   const { classes } = props;
-  // eslint-disable-next-line
-  const [theme, setTheme] = useState("blue");
   const [disabled, setDisabled] = useState(false);
   const [from_name, setfromName] = useState("");
   const [email, setEmail] = useState("");
@@ -79,7 +77,7 @@ function Contact(props) {
     }
   }
   return (
-    <main className={theme}>
+    <main>
       <section className="glass">
         <LeftNavbar />
         <div className="right inContact">
