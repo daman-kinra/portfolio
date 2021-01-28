@@ -21,35 +21,37 @@ function Skills() {
           </div>
           <div className="content skills">
             <div className="icons">
-              <SiReact size="5rem" />
+              <SiReact size={window.innerWidth < 600 ? "4rem" : "5rem"} />
               <p> ReactJs</p>
             </div>
             <div className="icons">
-              <FaNode size="5rem" />
+              <FaNode size={window.innerWidth < 600 ? "4rem" : "5rem"} />
               <p>NodeJs</p>
             </div>
             <div className="icons">
-              <IoLogoJavascript size="5rem" />
+              <IoLogoJavascript
+                size={window.innerWidth < 600 ? "4rem" : "5rem"}
+              />
               <p>JavaScript</p>
             </div>
             <div className="icons">
-              <DiMongodb size="5rem" />
+              <DiMongodb size={window.innerWidth < 600 ? "4rem" : "5rem"} />
               <p>MongoDB</p>
             </div>
             <div className="icons">
-              <ImHtmlFive2 size="5rem" />
+              <ImHtmlFive2 size={window.innerWidth < 600 ? "4rem" : "5rem"} />
               <p>HTML5</p>
             </div>
             <div className="icons">
-              <ImCss3 size="5rem" />
+              <ImCss3 size={window.innerWidth < 600 ? "4rem" : "5rem"} />
               <p>CSS3</p>
             </div>
             <div className="icons sass">
-              <DiSass size="5rem" />
+              <DiSass size={window.innerWidth < 600 ? "4rem" : "5rem"} />
               <p>SASS</p>
             </div>
             <div className="icons">
-              <FaJava size="6rem" />
+              <FaJava size={window.innerWidth < 600 ? "4rem" : "6rem"} />
               <p>Java</p>
             </div>
           </div>

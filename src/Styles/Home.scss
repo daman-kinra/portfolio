@@ -185,3 +185,99 @@ main {
 .heading.error {
   position: static;
 }
+@media only screen and (max-width: 1070px) {
+  .glass {
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+  }
+  .left {
+    border-radius: 0;
+    .avtar {
+      text-align: center;
+    }
+  }
+
+  .socials {
+    width: 100%;
+    border-radius: 0;
+    left: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  p {
+    font-size: 14px !important;
+  }
+  .icons.sass {
+    margin-top: -12px !important;
+  }
+  .content.skills {
+    justify-content: center;
+    height: 70%;
+  }
+  .content.project {
+    margin-top: 13vh;
+    height: 70%;
+    flex-grow: 1;
+    overflow: visible !important;
+  }
+  .project_codes .liveAt {
+    margin-left: 5px !important;
+    margin-right: 10px !important ;
+  }
+  .project_card:nth-child(1) {
+    margin-top: 0vh !important;
+  }
+  .content {
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .project_card {
+    h2 {
+      font-size: 11px !important;
+    }
+  }
+  .socials {
+    width: 100%;
+    bottom: 10%;
+    justify-content: space-around;
+    border-radius: 0;
+    left: 0;
+    p {
+      font-size: 12px !important;
+    }
+  }
+  .heading {
+    width: 100%;
+    left: 0;
+    justify-content: flex-start;
+    border-radius: 0;
+    h1 {
+      margin-left: 20px;
+      font-size: 30px !important;
+    }
+  }
+  .download_btn {
+    top: 5%;
+    z-index: 1000;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    // width: ;
+  }
+  .content.contact {
+    p {
+      font-size: 13px !important;
+    }
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 321px) {
+  h2 {
+    font-size: 15px !important;
+  }
+  .content.contact {
+    p {
+      font-size: 10px !important;
+    }
+  }
+}

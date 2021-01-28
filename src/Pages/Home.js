@@ -47,7 +47,7 @@ function Home() {
               </div>
             </a>
           </div>
-          <div className="content">
+          <div className="content home">
             <p style={{ fontSize: "15px" }}>
               "I'm passionate and driven to work with Full-Stack technologies
               and UI/UX development. Actively looking for internship

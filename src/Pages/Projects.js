@@ -20,7 +20,6 @@ function Projects() {
           </div>
           <div className="content project">
             {Data.map((project, pos) => {
-              console.log(project);
               return <Project key={pos} project={project} />;
             })}
           </div>
