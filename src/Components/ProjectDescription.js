@@ -22,7 +22,7 @@ export const Data = [
     live: "https://protected-reaches-06171.herokuapp.com",
   },
   {
-    title: "Move Search Website",
+    title: "Movie Search Website",
     desc: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora dolore
     ut soluta et deserunt exercitationem id. Molestias vitae reprehenderit
     rem nesciunt! Voluptatibus voluptas cupiditate beatae veniam soluta

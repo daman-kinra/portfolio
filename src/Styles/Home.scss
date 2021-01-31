@@ -205,6 +205,9 @@ main {
   }
 }
 @media only screen and (max-width: 600px) {
+  .input_fields {
+    min-width: 85% !important;
+  }
   p {
     font-size: 14px !important;
   }
@@ -265,6 +268,7 @@ main {
     // width: ;
   }
   .content.contact {
+    margin-bottom: 40px !important;
     p {
       font-size: 13px !important;
     }

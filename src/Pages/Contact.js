@@ -94,7 +94,7 @@ function Contact(props) {
               value={from_name}
               variant="outlined"
               size="small"
-              className="input_fiels"
+              className="input_fields"
               onChange={(e) => setfromName(e.target.value)}
               InputProps={{
                 classes: {
@@ -111,7 +111,7 @@ function Contact(props) {
               label="Email"
               variant="outlined"
               size="small"
-              className="input_fiels"
+              className="input_fields"
               onChange={(e) => setEmail(e.target.value)}
               InputProps={{
                 classes: {
@@ -127,7 +127,7 @@ function Contact(props) {
               label="Mobile Number"
               variant="outlined"
               size="small"
-              className="input_fiels"
+              className="input_fields"
               onChange={(e) => setPhoneNumber(e.target.value)}
               InputProps={{
                 classes: {
@@ -140,7 +140,7 @@ function Contact(props) {
             />
             <TextField
               value={Message}
-              className="input_fiels"
+              className="input_fields"
               id="outlined-multiline-static"
               label="Message"
               multiline
