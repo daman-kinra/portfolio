@@ -13,7 +13,10 @@ function App() {
   }, []);
   return (
     <Router>
-      <Snowfall color="white" snowflakeCount={350} />
+      <Snowfall
+        color="white"
+        snowflakeCount={window.innerWidth < 600 ? 200 : 350}
+      />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/skills" component={Skills} />
