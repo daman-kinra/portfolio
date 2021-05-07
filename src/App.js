@@ -10,6 +10,7 @@ import Snowfall from "react-snowfall";
 function App() {
   useEffect(() => {
     document.title = "Damandeep Kinra";
+    //testing
   }, []);
   return (
     <Router>
