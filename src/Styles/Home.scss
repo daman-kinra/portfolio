@@ -301,10 +301,6 @@ main {
   }
 }
 
-// @media (max-width: 300px) {
-//   .socials {
-//   }
-// }
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -319,4 +315,30 @@ main {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--activeRoute);
   transition: 0.3s ease-in-out;
+}
+@media (min-width: 1367px) {
+  .socials {
+    height: 13%;
+    a {
+      font-size: 1.8rem;
+    }
+  }
+  .avtar {
+    img {
+      height: 35%;
+      width: calc(35%);
+    }
+    h2 {
+      font-size: 1.3rem;
+    }
+  }
+  .links {
+    height: 20%;
+    a {
+      height: 100%;
+    }
+  }
+  .content.skills {
+    display: none;
+  }
 }

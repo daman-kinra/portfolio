@@ -20,7 +20,10 @@ function Home(props) {
               rel="noopener noreferrer"
             >
               <div className="icons">
-                <FaLinkedinIn size="1rem" style={{ color: "556052" }} />
+                <FaLinkedinIn
+                  size={`${window.innerWidth > 1366 ? "2rem" : "1rem"}`}
+                  style={{ color: "556052" }}
+                />
                 <p>LinkedIn</p>
               </div>
             </a>
@@ -30,7 +33,10 @@ function Home(props) {
               rel="noopener noreferrer"
             >
               <div className="icons">
-                <AiFillGithub size="1rem" style={{ color: "#556052" }} />
+                <AiFillGithub
+                  size={`${window.innerWidth > 1366 ? "2rem" : "1rem"}`}
+                  style={{ color: "#556052" }}
+                />
                 <p>Github</p>
               </div>
             </a>
@@ -40,7 +46,10 @@ function Home(props) {
               rel="noopener noreferrer"
             >
               <div className="icons">
-                <AiFillInstagram size="1rem" style={{ color: "#556052" }} />
+                <AiFillInstagram
+                  size={`${window.innerWidth > 1366 ? "2rem" : "1rem"}`}
+                  style={{ color: "#556052" }}
+                />
                 <p>Instagram</p>
               </div>
             </a>
