@@ -1,20 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import LeftNavbar from "../Components/LeftNavbar";
 import "../Styles/Home.scss";
 import Download from "../Components/Download";
 import { FaLinkedinIn } from "react-icons/fa";
 import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
-
-function Home() {
+import { theme } from "../theme/themeContext";
+function Home(props) {
+  const { changeTheme } = useContext(theme);
   return (
     <main>
       <section className="glass">
-        <LeftNavbar />
+        <LeftNavbar location={props.location} />
         <div className="right">
           <Download />
-          <div className="heading">
-            <h1>About</h1>
-          </div>
           <div className="socials">
             <a
               href="https://www.linkedin.com/in/daman-kinra"
@@ -46,15 +44,6 @@ function Home() {
                 <p>Instagram</p>
               </div>
             </a>
-          </div>
-          <div className="content home">
-            <p style={{ fontSize: "15px" }}>
-              "I'm passionate and driven to work with Full-Stack technologies
-              and UI/UX development. Actively looking for internship
-              opportunities in this domain. Have worked extensively on
-              technologies like NodeJs, ReactJs, MongoDB etc. Developed
-              web-applications for a couple of student startups."
-            </p>
           </div>
         </div>
       </section>

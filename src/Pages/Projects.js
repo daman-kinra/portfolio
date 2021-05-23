@@ -4,23 +4,18 @@ import Download from "../Components/Download";
 import { Data } from "../Components/ProjectDescription";
 import Project from "../Components/Project";
 import "../Styles/Projects.scss";
-
-import "../Styles/Home.scss";
 import LeftNavbar from "../Components/LeftNavbar";
 
-function Projects() {
+function Projects(props) {
   return (
     <main>
       <section className="glass">
-        <LeftNavbar />
+        <LeftNavbar location={props.location} />
         <div className="right">
           <Download />
-          <div className="heading">
-            <h1>Projects</h1>
-          </div>
-          <div className="content project">
-            {Data.map((project, pos) => {
-              return <Project key={pos} project={project} />;
+          <div className="content projects">
+            {Data.map((item, pos) => {
+              return <Project project={item} key={pos} />;
             })}
           </div>
         </div>

@@ -9,49 +9,49 @@ import { IoLogoJavascript } from "react-icons/io";
 import { DiMongodb, DiSass } from "react-icons/di";
 import "../Styles/Skills.scss";
 
-function Skills() {
+function Skills(props) {
   return (
     <main>
       <section className="glass">
-        <LeftNavbar />
+        <LeftNavbar location={props.location} />
         <div className="right">
           <Download />
-          <div className="heading">
-            <h1>Skills</h1>
-          </div>
+
           <div className="content skills">
             <div className="icons">
-              <SiReact size={window.innerWidth < 600 ? "4rem" : "5rem"} />
+              <SiReact size={window.innerWidth < 1025 ? "3rem" : "5.5rem"} />
               <p> ReactJs</p>
             </div>
             <div className="icons">
-              <FaNode size={window.innerWidth < 600 ? "4rem" : "5rem"} />
+              <FaNode size={window.innerWidth < 1025 ? "3rem" : "5.5rem"} />
               <p>NodeJs</p>
             </div>
             <div className="icons">
               <IoLogoJavascript
-                size={window.innerWidth < 600 ? "4rem" : "5rem"}
+                size={window.innerWidth < 1025 ? "3rem" : "5.5rem"}
               />
               <p>JavaScript</p>
             </div>
             <div className="icons">
-              <DiMongodb size={window.innerWidth < 600 ? "4rem" : "5rem"} />
+              <DiMongodb size={window.innerWidth < 1025 ? "3rem" : "5.5rem"} />
               <p>MongoDB</p>
             </div>
             <div className="icons">
-              <ImHtmlFive2 size={window.innerWidth < 600 ? "4rem" : "5rem"} />
+              <ImHtmlFive2
+                size={window.innerWidth < 1025 ? "3rem" : "5.5rem"}
+              />
               <p>HTML5</p>
             </div>
             <div className="icons">
-              <ImCss3 size={window.innerWidth < 600 ? "4rem" : "5rem"} />
+              <ImCss3 size={window.innerWidth < 1025 ? "3rem" : "5.5rem"} />
               <p>CSS3</p>
             </div>
             <div className="icons sass">
-              <DiSass size={window.innerWidth < 600 ? "4rem" : "5rem"} />
+              <DiSass size={window.innerWidth < 1025 ? "3rem" : "5.5rem"} />
               <p>SASS</p>
             </div>
             <div className="icons">
-              <FaJava size={window.innerWidth < 600 ? "4rem" : "6rem"} />
+              <FaJava size={window.innerWidth < 1025 ? "3rem" : "5.5rem"} />
               <p>Java</p>
             </div>
           </div>

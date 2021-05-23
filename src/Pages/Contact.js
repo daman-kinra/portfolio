@@ -61,7 +61,7 @@ function Contact(props) {
             Phone_Number: Phone_Number,
             Message: Message,
           },
-          "user_TYBcHVGQM9MpDgYKH4jrT",
+          "user_TYBcHVGQM9MpDgYKH4jrT"
         )
         .then((res) => {
           alert("I have received your details, I will contact you soon");
@@ -79,15 +79,13 @@ function Contact(props) {
   return (
     <main>
       <section className="glass">
-        <LeftNavbar />
+        <LeftNavbar location={props.location} />
         <div className="right inContact">
           <Download />
-          <div className="heading">
-            <h1>Contact</h1>
-          </div>
+
           <div className="content contact">
-            <p>Drop your details in the contact form,</p>
-            <p>I will reach out to you soon.</p>
+            <p className="lines">Drop your details in the contact form,</p>
+            <p className="lines">I will reach out to you soon.</p>
 
             <TextField
               label="Name"

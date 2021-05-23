@@ -1,31 +1,64 @@
-.right.inContact {
-  display: flex;
-  align-items: flex-end;
-}
 .input_fields {
   margin-bottom: 20px !important;
   width: 70% !important;
 }
+.contact.content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  align-items: center;
+  justify-content: center;
+}
 .input_fiels:focus {
   outline: none !important;
   border: none !important;
-  //   border: 1px solid #70b4cc !important;
 }
 .input_fiels:hover {
   border: none !important;
 }
-.content.contact {
-  margin-bottom: 10px;
-  height: 80%;
-}
+
 .submit_btn {
   background-color: rgba(255, 255, 255, 0.7) !important;
 }
-p {
-  font-size: 17px;
+.lines {
+  font-size: 1rem;
   font-family: "Noto Serif JP", serif;
   color: #556052;
+  text-align: center;
 }
-p:nth-child(2) {
-  margin-bottom: 20px;
+.lines:nth-child(2) {
+  margin-bottom: 1.3rem;
+}
+@media (max-width: 991px) {
+  .input_fields {
+    margin-bottom: 20px !important;
+    width: 90% !important;
+  }
+  .contact.content {
+    padding: 1rem;
+  }
+}
+@media (max-width: 300px) {
+  .input_fields {
+    margin-bottom: 20px !important;
+    width: 100% !important;
+  }
+}
+@media (max-width: 1024px) and (orientation: landscape) {
+  .contact.content {
+    justify-content: unset;
+    overflow-y: auto;
+  }
+}
+@media (max-height: 300px) and (orientation: landscape) {
+  .content.skills {
+    justify-content: flex-start;
+    padding-top: 1.5rem;
+    grid-template-columns: auto auto auto auto;
+    grid-row-gap: 2rem;
+    max-height: calc(100vh - 5rem);
+    overflow-y: auto;
+  }
 }
