@@ -206,9 +206,26 @@ main {
     align-items: center;
   }
 }
+.homeabout {
+  justify-content: flex-start;
+}
+.homeabout h1 {
+  font-size: 2rem;
+  margin: 2rem;
+  margin-top: 15vh;
+  text-align: center;
+  color: #556052;
+  font-weight: 500;
+}
 @media (max-width: 991px) {
+  .homeabout h1 {
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    margin-top: 15vh;
+  }
   .glass {
-    height: 100vh;
+    height: fit-content;
+    min-height: 100vh;
     width: 100%;
     border-radius: 0rem;
     position: absolute;
@@ -241,6 +258,14 @@ main {
   }
 }
 @media (max-width: 1024px) and (orientation: landscape) {
+  .homeabout h1 {
+    font-size: 1.5rem;
+    margin: 1.5rem;
+    margin-top: 15vh;
+  }
+  .glass {
+    height: 100vh;
+  }
   .left {
     flex: 25%;
   }
@@ -316,17 +341,21 @@ main {
   background: var(--activeRoute);
   transition: 0.3s ease-in-out;
 }
+
 @media (min-width: 1367px) {
+  .homeabout h1 {
+    font-size: 3rem;
+  }
   .socials {
     height: 13%;
     a {
-      font-size: 1.8rem;
+      font-size: 1.3rem;
     }
   }
   .avtar {
     img {
-      height: 35%;
-      width: calc(35%);
+      height: 15vh;
+      width: 15vh;
     }
     h2 {
       font-size: 1.3rem;

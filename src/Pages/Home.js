@@ -11,7 +11,11 @@ function Home(props) {
     <main>
       <section className="glass">
         <LeftNavbar location={props.location} />
-        <div className="right">
+        <div className="right homeabout">
+          <h1>
+            Hi, I am a Frontend Developer, currently working as a Frontend
+            developer intern in "DJ interactive solutions".{" "}
+          </h1>
           <Download />
           <div className="socials">
             <a
